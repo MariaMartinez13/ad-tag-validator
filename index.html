@@ -1,1 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VPAID & Ad-Verification Validator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Ad-Tag Validator</h1>
+            <p>Herramienta técnica para la inspección de VPAID y Blocking en VAST Tags.</p>
+        </header>
 
+        <section class="input-area">
+            <textarea id="tagInput" placeholder="Pega tu VAST Tag (URL o XML) aquí..."></textarea>
+            <button id="validateBtn">Validar Tag</button>
+        </section>
+
+        <section id="results" class="results-area hidden">
+            <div class="result-card" id="vpaidCard">
+                <h3>VPAID Status</h3>
+                <p id="vpaidStatus">Esperando análisis...</p>
+            </div>
+            <div class="result-card" id="verificationCard">
+                <h3>Verification & Monitoring</h3>
+                <p id="verificationStatus">Esperando análisis...</p>
+            </div>
+            <div class="result-card" id="detailsCard">
+                <h3>Proveedores Detectados</h3>
+                <p id="detailsStatus">-</p>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
